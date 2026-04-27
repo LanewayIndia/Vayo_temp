@@ -474,9 +474,9 @@ input:focus {
 }
 
 /* Override style.css footer for the form page */
-.footer {
+/* .footer {
     position: relative;
     bottom: auto;
     right: auto;
     pointer-events: auto;
-}
+} */
