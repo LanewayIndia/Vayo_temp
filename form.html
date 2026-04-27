@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAYO - Creating Community to Connect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <!-- Google libphonenumber library -->
+    <script src="https://cdn.jsdelivr.net/npm/libphonenumber-js@1.10.35/bundle/libphonenumber-js.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <video class="bg-video" autoplay muted loop>
+            <source src="./assets/pin_bg_2.mp4" type=video/mp4>
+        </video>
+    </div>
+
+    <nav class="form-navbar" id="form-nav">
+        <a href="/" class="logo">
+            <img src="./assets/vayo-logo.png" alt="VAYO Logo">
+        </a>
+    </nav>
+    
+    <section>
+        <form>
+            <div class="form-container">
+                <h1 class="form-title">Join the Waitlist</h1>
+                <p class="form-description">Be the first to experience something extraordinary. Get exclusive early access and special launch benefits.</p>
+                <div class="form-group">
+                    <label class="form-label">First Name <span class="required">*</span></label>
+                    <input type="text" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Last Name <span class="required">*</span></label>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email Address <span class="required">*</span></label>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="phone-group">
+                    <label class="form-label">Phone Number <span class="required">*</span></label>
+                    <div class="phone-input-group">
+                        <select id="countryCode" class="form-select country-select" required>
+                        <option value="" disabled selected>Code</option>
+                        <option value="+1" data-iso="US">US +1</option>
+                        <option value="+1" data-iso="CA">CA +1</option>
+                        <option value="+44" data-iso="GB">GB +44</option>
+                        <option value="+91" data-iso="IN">IN +91</option>
+                        <option value="+86" data-iso="CN">CN +86</option>
+                        <option value="+81" data-iso="JP">JP +81</option>
+                        <option value="+49" data-iso="DE">DE +49</option>
+                        <option value="+33" data-iso="FR">FR +33</option>
+                        <option value="+39" data-iso="IT">IT +39</option>
+                        <option value="+34" data-iso="ES">ES +34</option>
+                        <option value="+61" data-iso="AU">AU +61</option>
+                        <option value="+64" data-iso="NZ">NZ +64</option>
+                        <option value="+27" data-iso="ZA">ZA +27</option>
+                        <option value="+55" data-iso="BR">BR +55</option>
+                        <option value="+54" data-iso="AR">AR +54</option>
+                        <option value="+52" data-iso="MX">MX +52</option>
+                        <option value="+234" data-iso="NG">NG +234</option>
+                        <option value="+20" data-iso="EG">EG +20</option>
+                        <option value="+966" data-iso="SA">SA +966</option>
+                        <option value="+971" data-iso="AE">AE +971</option>
+                        <option value="+60" data-iso="MY">MY +60</option>
+                        <option value="+65" data-iso="SG">SG +65</option>
+                        <option value="+62" data-iso="ID">ID +62</option>
+                        <option value="+66" data-iso="TH">TH +66</option>
+                        <option value="+63" data-iso="PH">PH +63</option>
+                        <option value="+82" data-iso="KR">KR +82</option>
+                        <option value="+84" data-iso="VN">VN +84</option>
+                        <option value="+7" data-iso="RU">RU +7</option>
+                        <option value="+47" data-iso="NO">NO +47</option>
+                        <option value="+46" data-iso="SE">SE +46</option>
+                        <option value="+45" data-iso="DK">DK +45</option>
+                        <option value="+31" data-iso="NL">NL +31</option>
+                        <option value="+32" data-iso="BE">BE +32</option>
+                        <option value="+41" data-iso="CH">CH +41</option>
+                        <option value="+43" data-iso="AT">AT +43</option>
+                        <option value="+48" data-iso="PL">PL +48</option>
+                        <option value="+30" data-iso="GR">GR +30</option>
+                        <option value="+351" data-iso="PT">PT +351</option>
+                        <option value="+358" data-iso="FI">FI +358</option>
+                        <option value="+353" data-iso="IE">IE +353</option>
+                        <option value="+40" data-iso="RO">RO +40</option>
+                        <option value="+36" data-iso="HU">HU +36</option>
+                        <option value="+420" data-iso="CZ">CZ +420</option>
+                        <option value="+421" data-iso="SK">SK +421</option>
+                        <option value="+385" data-iso="HR">HR +385</option>
+                        <option value="+995" data-iso="GE">GE +995</option>
+                        <option value="+1-876" data-iso="JM">JM +1-876</option>
+                        <option value="+1-868" data-iso="TT">TT +1-868</option>
+                        <option value="+1-809" data-iso="DO">DO +1-809</option>
+                        <option value="+1-784" data-iso="VC">VC +1-784</option>
+                        <option value="+1-758" data-iso="LC">LC +1-758</option>
+                        <option value="+1-473" data-iso="GD">GD +1-473</option>
+                        <option value="+1-246" data-iso="BB">BB +1-246</option>
+                        <option value="+1-264" data-iso="AI">AI +1-264</option>
+                        <option value="+7-996" data-iso="KG">KG +7-996</option>
+                        <option value="+998" data-iso="UZ">UZ +998</option>
+                        <option value="+992" data-iso="TJ">TJ +992</option>
+                        <option value="+993" data-iso="TM">TM +993</option>
+                        <option value="+7" data-iso="KZ">KZ +7</option>
+                        <option value="+880" data-iso="BD">BD +880</option>
+                        <option value="+94" data-iso="LK">LK +94</option>
+                        <option value="+977" data-iso="NP">NP +977</option>
+                        <option value="+92" data-iso="PK">PK +92</option>
+                        <option value="+93" data-iso="AF">AF +93</option>
+                        <option value="+98" data-iso="IR">IR +98</option>
+                        <option value="+964" data-iso="IQ">IQ +964</option>
+                        <option value="+962" data-iso="JO">JO +962</option>
+                        <option value="+961" data-iso="LB">LB +961</option>
+                        <option value="+963" data-iso="SY">SY +963</option>
+                        <option value="+90" data-iso="TR">TR +90</option>
+                        <option value="+212" data-iso="MA">MA +212</option>
+                        <option value="+213" data-iso="DZ">DZ +213</option>
+                        <option value="+216" data-iso="TN">TN +216</option>
+                        <option value="+218" data-iso="LY">LY +218</option>
+                    </select>
+                        <input type="tel" id="phoneNumber" placeholder="Enter phone number" required>
+                    </div>
+                    <div class="phone-validation" id="phoneValidation"></div>
+                    <div class="phone-preview" id="phonePreview"></div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Preferred Contact Method <span class="required">*</span></label>
+                    <select id="contactMethod" class="form-select" required>
+                        <option value="" disabled selected>Select preferred contact method</option>
+                        <option value="email">Email</option>
+                        <option value="phone">WhatsApp</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Comments / Questions / Requests</label>
+                    <textarea class="form-textarea" placeholder="Can we help you with anything else?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg" >Join Now</button>
+            </div>
+        </form>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="footer-glow"></div>
+        <div class="footer-main">
+            <!-- Left: Logo + Description -->
+            <div class="footer-brand-col">
+                <a href="/" class="footer-logo-link">
+                    <img src="./assets/vayo-logo.png" alt="VAYO Logo" class="footer-logo-img">
+                </a>
+                <p class="footer-description">
+                    Vayo Commune is a community-driven social platform and offline community that helps people meet others through real-life activities, hobbies, and shared experiences rather than just online chatting.
+                </p>
+            </div>
+
+            <!-- Right: Contact Details -->
+            <div class="footer-contact-col">
+                <h3 class="footer-heading">CONTACT</h3>
+
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                        <circle cx="12" cy="9" r="2.5"/>
+                    </svg>
+                    <div>
+                        <p class="contact-label">Head Office</p>
+                        <p class="contact-text">1087 B, Sankranthi, Perumbaikkad<br>Kottayam - 686016, Kerala</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                        <circle cx="12" cy="9" r="2.5"/>
+                    </svg>
+                    <div>
+                        <p class="contact-label">Operational Office</p>
+                        <p class="contact-text">Koramangala 8th Block<br>Bangalore - 560095, Karnataka</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                    <div>
+                        <p class="contact-text"><a href="tel:+919961348942">+91 9961348942</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="M22 4l-10 8L2 4"/>
+                    </svg>
+                    <div>
+                        <p class="contact-text"><a href="mailto:info@laneway.in">vayocommune@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-divider"></div>
+        <div class="footer-bottom-bar">
+            <p class="footer-copy">&copy; 2026 VAYO Powered by <a style="color: var(--muted); text-decoration: none;" href="https://www.laneway.in" target="_blank" rel="noopener">Laneway</a>. All rights reserved.</p>
+
+            <div class="footer-socials">
+                <a href="https://www.youtube.com/@vayobangalore" class="social-link" aria-label="Youtube" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33 2.78 2.78 0 001.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.41z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <a href="https://www.instagram.com/vayo.bangalore/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <!-- <a href="#" class="social-link" aria-label="Twitter" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a> -->
+                <a href="https://www.linkedin.com/company/vayo-commune/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <!-- <a href="#" class="social-link" aria-label="Website" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10A15.3 15.3 0 0112 2z"/></svg>
+                </a> -->
+            </div>
+
+            <!-- <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms &amp; Services</a>
+                <a href="#" class="footer-link">Cookie Policy</a>
+            </div> -->
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
