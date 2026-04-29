@@ -108,7 +108,8 @@ section {
 
 @media (max-width: 640px) {
     section {
-        padding: 80px 16px 30px;
+        padding: 60px 16px 60px;
+        margin: 60px 2px 60px;
         min-height: auto;
     }
 }
